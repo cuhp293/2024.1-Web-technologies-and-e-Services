@@ -185,7 +185,7 @@ section:target {
 }
 
 .footer-copy-right {
-  background-color: #3f51b6;
+  background-color: var(--primary-color);
   padding: 12px 0;
   text-align: center;
   margin-top: 32px;
