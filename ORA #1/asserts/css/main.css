@@ -229,7 +229,7 @@ section:target {
     display: none;
   }
   .left-nav {
-    left: -18%;
+    left: -24%;
   }
   .content {
     padding: 24px;
@@ -277,6 +277,9 @@ section:target {
 @media (max-width: 480px) {
   .mobile-hidden {
     display: none;
+  }
+  .show-menu .mobile-hidden {
+    display: block;
   }
   .footer-container {
     justify-content: flex-start;

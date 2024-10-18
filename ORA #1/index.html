@@ -16,7 +16,7 @@
   </head>
   <body>
     <nav class="project-navigation">
-      <ul class="project-nav-list">
+      <ul class="project-nav-list" id="nav-list">
         <li class="project-nav-item">
           <a href="#main-page" class="project-nav-link project-nav-img-link">
             <img
@@ -869,24 +869,12 @@
       });
 
       // xử lý khi navbars xuất hiện trên mobile và tablets
-      const menuToggle = document.getElementById("menu-toggle");
-      const leftNavs = document.querySelectorAll("#left-nav");
-      const closeNavs = document.querySelectorAll("#close-nav");
-
-      menuToggle.addEventListener("click", function (event) {
-        event.preventDefault();
-        leftNavs.forEach((leftNav) => {
-          leftNav.classList.add("open");
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("nav-list").classList.toggle("show-menu");
         });
-      });
-
-      closeNavs.forEach((closeNav) => {
-        closeNav.addEventListener("click", function () {
-          leftNavs.forEach((leftNav) => {
-            leftNav.classList.remove("open");
-          });
-        });
-      });
     </script>
   </body>
 </html>
