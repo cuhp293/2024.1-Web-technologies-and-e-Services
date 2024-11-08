@@ -742,18 +742,21 @@ function resetStudentInfo() {
     },
     {
       id: "studentInfo-detail3",
-      title: "Sở thích",
+      title: "Sinh hoạt cộng đồng",
       details: [
         {
           id: "studentInfo-detail3-content1",
-          title: "Sở thích",
+          title: "Tham gia các hoạt động cộng đồng",
           html: `
-                <ul>
-                  <li>Đọc sách</li>
-                  <li>Nghe nhạc</li>
-                  <li>Xem youtube</li>
-                </ul>                    
-                `,
+            <p>Sinh hoạt cộng đồng là một phần quan trọng trong việc phát triển bản thân, tạo dựng mối quan hệ và đóng góp cho xã hội. Trong môi trường học tập, các hoạt động cộng đồng giúp sinh viên phát triển kỹ năng giao tiếp, làm việc nhóm và nâng cao tinh thần trách nhiệm.</p>
+            <h3>Ví dụ về các hoạt động cộng đồng:</h3>
+            <ul>
+              <li><strong>Tình nguyện tại các tổ chức từ thiện:</strong> Sinh viên có thể tham gia các hoạt động tình nguyện, giúp đỡ những người có hoàn cảnh khó khăn.</li>
+              <li><strong>Tham gia câu lạc bộ học thuật và văn hóa:</strong> Đây là cơ hội để sinh viên mở rộng kiến thức và kỹ năng trong các lĩnh vực yêu thích, đồng thời giao lưu với các bạn cùng đam mê.</li>
+              <li><strong>Hỗ trợ các chương trình bảo vệ môi trường:</strong> Sinh viên có thể tham gia vào các chiến dịch như dọn dẹp công viên, trồng cây hoặc tuyên truyền về bảo vệ môi trường.</li>
+            </ul>
+            <p>Tham gia sinh hoạt cộng đồng không chỉ giúp sinh viên có những trải nghiệm quý báu mà còn góp phần xây dựng một xã hội văn minh, tiến bộ.</p>
+          `,
         },
       ],
     },

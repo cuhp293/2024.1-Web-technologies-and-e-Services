@@ -1,10 +1,10 @@
 :root {
-  --active-btn: #08979c;  /*màu button khi đang trong trạng thái active*/
-  --hover-btn: #45b0b4;  /*màu button khi đang trong trạng thái hover*/
-  --header: #006d75; /*màu header, navbar, màu nền footer nửa dưới, chữ dưới quảng cáo, màu border */
-  --sidebar-background: #def2f1; /*màu nền sidebar bên trái */
-  --footer-up: #50b9b4; /*màu nền footer nửa trên */
-  --table-background: #E0F2F1; /*màu nền bảng*/
+  --active-btn: #a0002c; /*màu button khi đang trong trạng thái active*/
+  --hover-btn: #660019; /*màu button khi đang trong trạng thái hover*/
+  --header: #800020; /*màu header, navbar, màu nền footer nửa dưới, chữ dưới quảng cáo, màu border */
+  --sidebar-background: #f3e5e5; /*màu nền sidebar bên trái */
+  --footer-up: #a0002c; /*màu nền footer nửa trên */
+  --table-background: #f3e5e5; /*màu nền bảng*/
 }
 
 html,
@@ -37,8 +37,6 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .container h3 {
   font-size: 20px;
@@ -99,7 +97,6 @@ table th {
   font-weight: bold;
 }
 
-
 #myFooter {
   position: relative;
   /* Can also try fixed if you want the footer to stay visible */
@@ -115,10 +112,9 @@ table th {
   /* Space for the footer */
 }
 
-
 .w3-sidebar {
   z-index: 3;
-  width: 250px;
+  width: 240px !important;
   top: 43px;
   bottom: 0;
   height: inherit;
@@ -197,7 +193,8 @@ table th {
   flex-wrap: wrap !important;
 }
 
-.name-input, layout-input{
+.name-input,
+layout-input {
   height: 50px;
 }
 
@@ -209,13 +206,62 @@ table th {
   overflow-y: auto;
 }
 
+.footer-container {
+  background-color: var(--footer-up);
+  color: white;
+  margin-top: 32px;
+}
+.footer-box {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 18px;
+}
+.footer-description {
+  text-align: center;
+  font-size: 14px;
+  padding: 40px 60px;
+  line-height: 1.8;
+}
+.footer-box-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding-top: 5%;
+}
+.footer-icon-wrap i {
+  margin: 0 16px;
+}
+
+.footer-copy-right {
+  background-color: var(--header);
+  padding: 24px 0;
+  text-align: center;
+  margin-top: 32px;
+}
+
 @media (max-width: 992px) {
   #myFooter {
-      margin-left: 0!important;
-      margin-right: 0!important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .width-80 {
     width: 60%;
+  }
+
+  .footer-container {
+    justify-content: flex-start;
+  }
+  .footer-box {
+    flex-direction: column;
+    margin-bottom: 32px;
   }
 }
